@@ -6,8 +6,8 @@
     </div>
   </form>
   <section class="row mb-5 m-1">
-    <div class="col-md-6 px-0">
-      <app-breakfast *ngIf="ListActive === 'breakfast'" [itemsBreakfast]="itemsBreakfast" (newItem)="addItemOrder($event)"></app-breakfast>
+    <div class="col-md-6 px-0" *ngIf="ListActive === 'breakfast'">
+      <app-breakfast  [itemsBreakfast]="itemsBreakfast" (newItem)="addItemOrder($event)"></app-breakfast>
     </div>
     <div class="col-md-6 px-0" *ngIf="ListActive === 'lunch'">
       <app-lunch [itemsLunch]="itemsLunch" (newItem)="addItemOrder($event)"></app-lunch>
