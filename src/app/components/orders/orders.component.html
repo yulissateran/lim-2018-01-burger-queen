@@ -1,0 +1,33 @@
+<div class="card">
+  <ul class="list-group list-group-flush">
+    <app-item class="list-group-item" [iconDelete]="iconDelete" *ngFor="let item of order; let i=index" [indice]="i" [item]="item"
+    (delete)="emmitDelete($event)" (rest)="emmitRestItem($event)"></app-item>
+    <li class="list-group-item">
+      <div>
+        <div class="d-flex bd-highlight">
+          <div class="p-2 flex-grow-1 bd-highlight">
+            <h5>Total</h5>
+          </div>
+          <div class=" bd-highlight">
+            <div class="d-flex bd-highlight">
+              <div class="pr-5 p-2 bd-highlight mr-4">S/ {{priceTotal}}.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div *ngIf="order.length > 0" class="form-row align-items-center">
+    <div class="col-12 my-1">
+      <div class="input-group">
+        <input type="text" class="form-control" #name placeholder="Nombre">
+        <div class="invalid-feedback  text-center" [ngClass]="{'d-block': invalidName }">
+          Ingresa tu nombre.
+        </div>
+      </div>
+    </div>
+    <div class="col-12  my-1 d-flex justify-content-center">
+      <button type="buuton" class="btn btn-primary" (click)="emmitSend(name.value)">Enviar a cocina</button>
+    </div>
+  </div>
+</div>

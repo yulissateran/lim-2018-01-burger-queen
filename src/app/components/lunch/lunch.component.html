@@ -1,0 +1,6 @@
+<div class="card" >
+    
+    <ul class="list-group list-group-flush">
+        <app-item class="list-group-item"  *ngFor="let item of itemsLunch" [item]="item" (newItem)="emmitItem($event)" [iconAdd]="iconAdd" ></app-item>
+    </ul>   
+  </div>
