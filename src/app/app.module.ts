@@ -13,8 +13,10 @@ import { LunchComponent } from './components/lunch/lunch.component';
 import { ItemComponent } from './components/item/item.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
-import { environment } from './../environments/environment';
+// import { environment } from './../environments/environment';
 import { ItemCardComponent } from './components/item-card/item-card.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 // import { Order } from './interfaces/order';
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { ItemCardComponent } from './components/item-card/item-card.component';
     // AngularFirestore,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule.enablePersistence(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
