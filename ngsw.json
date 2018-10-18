@@ -1,0 +1,115 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.8b76843b760ebd06df1b.js",
+        "/polyfills.7fb637d055581aa28d51.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/styles.2b45f6648b8a7c880bcd.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/bootstrap/css/bootstrap-grid.css",
+        "/assets/bootstrap/css/bootstrap-grid.css.map",
+        "/assets/bootstrap/css/bootstrap-grid.min.css",
+        "/assets/bootstrap/css/bootstrap-grid.min.css.map",
+        "/assets/bootstrap/css/bootstrap-reboot.css",
+        "/assets/bootstrap/css/bootstrap-reboot.css.map",
+        "/assets/bootstrap/css/bootstrap-reboot.min.css",
+        "/assets/bootstrap/css/bootstrap-reboot.min.css.map",
+        "/assets/bootstrap/css/bootstrap.css",
+        "/assets/bootstrap/css/bootstrap.css.map",
+        "/assets/bootstrap/css/bootstrap.min.css",
+        "/assets/bootstrap/css/bootstrap.min.css.map",
+        "/assets/bootstrap/jquery-3.3.1.slim.min.js",
+        "/assets/bootstrap/js/bootstrap.bundle.js",
+        "/assets/bootstrap/js/bootstrap.bundle.js.map",
+        "/assets/bootstrap/js/bootstrap.bundle.min.js",
+        "/assets/bootstrap/js/bootstrap.bundle.min.js.map",
+        "/assets/bootstrap/js/bootstrap.js",
+        "/assets/bootstrap/js/bootstrap.js.map",
+        "/assets/bootstrap/js/bootstrap.min.js",
+        "/assets/bootstrap/js/bootstrap.min.js.map",
+        "/assets/bootstrap/popper.min.js",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/bootstrap/css/bootstrap-grid.css": "99ffc3eea9a4535594d60f7c6ca990def79c5de2",
+    "/assets/bootstrap/css/bootstrap-grid.css.map": "b27578fe8d4d6ac0ad1cfb9889819a82a432214b",
+    "/assets/bootstrap/css/bootstrap-grid.min.css": "6524b91a1cd7ed3d305fb7b073e4dc36f59d6e38",
+    "/assets/bootstrap/css/bootstrap-grid.min.css.map": "6b4c8558c6b00fc700168c4166a81ce515928ec5",
+    "/assets/bootstrap/css/bootstrap-reboot.css": "02de54ac6eb7104233a2978ab625b36a31c18df1",
+    "/assets/bootstrap/css/bootstrap-reboot.css.map": "63405d8b28d6e93c640488a6bbe12ca0df2363b0",
+    "/assets/bootstrap/css/bootstrap-reboot.min.css": "d562f7186601cf58e853c569dd3b6648f272cb04",
+    "/assets/bootstrap/css/bootstrap-reboot.min.css.map": "531ee48ef3c8f401a78ef235a68054376ff19e6a",
+    "/assets/bootstrap/css/bootstrap.css": "a0529619b9e74c3f7ae7f89b95001a2d7938cca8",
+    "/assets/bootstrap/css/bootstrap.css.map": "7b8868b78570b112775e9192baeaf5059761eb41",
+    "/assets/bootstrap/css/bootstrap.min.css": "7ccf464455d57e73be3acf820ba77ee92ad4fc13",
+    "/assets/bootstrap/css/bootstrap.min.css.map": "331c4c24aae7596194038808de5fd5890a58b97c",
+    "/assets/bootstrap/jquery-3.3.1.slim.min.js": "eef5c16b5a1dafa93d1e1b24b4e94d84937dd8a3",
+    "/assets/bootstrap/js/bootstrap.bundle.js": "2e1166f585bcdc2665d774db1f69ca5e4ed677c9",
+    "/assets/bootstrap/js/bootstrap.bundle.js.map": "221781d5c60e8ea152edd22d0c87785a876bff31",
+    "/assets/bootstrap/js/bootstrap.bundle.min.js": "85f925fb5a964a066c2cfa13214e17affa6d31df",
+    "/assets/bootstrap/js/bootstrap.bundle.min.js.map": "ee000a27df352ddf24555390b90d6ffffb7a3d79",
+    "/assets/bootstrap/js/bootstrap.js": "2dd96a869fa6cb77400270dd11a743b2694045ee",
+    "/assets/bootstrap/js/bootstrap.js.map": "de4463011ed8fbe90374f94b165c6c9811b8db0e",
+    "/assets/bootstrap/js/bootstrap.min.js": "12ca7264086b9e543605395947c6671edde9ac80",
+    "/assets/bootstrap/js/bootstrap.min.js.map": "0c489167cf0fa7d59ea27d3ec6f09099ed568159",
+    "/assets/bootstrap/popper.min.js": "2d3aeb4ae26cf3670fcce59c7045be862b5ed844",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/index.html": "60c4acbaa044832db2e7267e11a6587a130ba511",
+    "/main.8b76843b760ebd06df1b.js": "f33735d3d837acc4db9cbc27e921793e6923065a",
+    "/polyfills.7fb637d055581aa28d51.js": "ef2035f0504b4f77eac510c33595c81a5d09e33f",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/styles.2b45f6648b8a7c880bcd.css": "bfedd0fdf160c33de15b596a6d127b3e247299de"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
