@@ -9,7 +9,7 @@
       "urls": [
         "https://yulissateran.github.io/lim-2018-01-burger-queen/favicon.ico",
         "https://yulissateran.github.io/lim-2018-01-burger-queen/index.html",
-        "https://yulissateran.github.io/lim-2018-01-burger-queen/main.8b76843b760ebd06df1b.js",
+        "https://yulissateran.github.io/lim-2018-01-burger-queen/main.b5813919812555de2401.js",
         "https://yulissateran.github.io/lim-2018-01-burger-queen/polyfills.7fb637d055581aa28d51.js",
         "https://yulissateran.github.io/lim-2018-01-burger-queen/runtime.a66f828dca56eeb90e02.js",
         "https://yulissateran.github.io/lim-2018-01-burger-queen/styles.2b45f6648b8a7c880bcd.css"
@@ -55,7 +55,19 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "burger",
+      "patterns": [
+        "https:\\/\\/burguer-queen-e0998\\.firebaseio\\.com\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 7200000,
+      "timeoutMs": 8000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "https://yulissateran.github.io/lim-2018-01-burger-queen/assets/bootstrap/css/bootstrap-grid.css": "99ffc3eea9a4535594d60f7c6ca990def79c5de2",
     "https://yulissateran.github.io/lim-2018-01-burger-queen/assets/bootstrap/css/bootstrap-grid.css.map": "b27578fe8d4d6ac0ad1cfb9889819a82a432214b",
@@ -88,8 +100,8 @@
     "https://yulissateran.github.io/lim-2018-01-burger-queen/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://yulissateran.github.io/lim-2018-01-burger-queen/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://yulissateran.github.io/lim-2018-01-burger-queen/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://yulissateran.github.io/lim-2018-01-burger-queen/index.html": "d81d6e50c870ea411b9cd77196422cef0524d61f",
-    "https://yulissateran.github.io/lim-2018-01-burger-queen/main.8b76843b760ebd06df1b.js": "f33735d3d837acc4db9cbc27e921793e6923065a",
+    "https://yulissateran.github.io/lim-2018-01-burger-queen/index.html": "d7ceeec4b0f247e3e4cedadbbec4952bcba3ba16",
+    "https://yulissateran.github.io/lim-2018-01-burger-queen/main.b5813919812555de2401.js": "2246b09b72719361702f3d62f17a3edbfb8fa851",
     "https://yulissateran.github.io/lim-2018-01-burger-queen/polyfills.7fb637d055581aa28d51.js": "ef2035f0504b4f77eac510c33595c81a5d09e33f",
     "https://yulissateran.github.io/lim-2018-01-burger-queen/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
     "https://yulissateran.github.io/lim-2018-01-burger-queen/styles.2b45f6648b8a7c880bcd.css": "bfedd0fdf160c33de15b596a6d127b3e247299de"
