@@ -22,5 +22,19 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "burger",
+      "urls": [
+        "https://burguer-queen-e0998.firebaseio.com/**"
+      ],
+      "cacheConfig": {
+        "startegy": "freshness",
+        "maxAge": "2h",
+        "maxSize": 100,
+        "timeout": "8s"
+      }
+    }
   ]
 }
