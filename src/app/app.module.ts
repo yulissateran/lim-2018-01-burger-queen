@@ -31,10 +31,10 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
-    // AngularFirestore,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule.enablePersistence(),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]

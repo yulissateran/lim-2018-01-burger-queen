@@ -6,13 +6,12 @@
     </div>
   </div>
   <form class="row mt-4 ">
-    <div class="col-md-3 p-0"><button type="button" class="btn btn-primary btn-lg mr-1 text-white btn-block" (click)="checkoutListBreakfast()" [ngClass]="{'btn-primary': ListActive === 'breakfast' ,  'bg-secondary': ListActive === 'lunch' }">
+    <div class="col-md-3 p-0"><button type="button" class="btn btn-primary btn-lg mr-1 text-white btn-block" (click)="checkoutListBreakfast()"
+        [ngClass]="{'btn-primary': ListActive === 'breakfast' ,  'bg-secondary': ListActive === 'lunch' }">
         Desayuno</button></div>
     <div class="col-md-3 p-0">
-        <button type="button" class="btn bg-secondary btn-lg  text-white btn-block" (click)="checkoutListLunch()" [ngClass]="{'bg-secondary':ListActive === 'breakfast' ,  'btn-primary': ListActive === 'lunch' }">Almuerzo</button>
-
+      <button type="button" class="btn bg-secondary btn-lg  text-white btn-block" (click)="checkoutListLunch()" [ngClass]="{'bg-secondary':ListActive === 'breakfast' ,  'btn-primary': ListActive === 'lunch' }">Almuerzo</button>
     </div>
-    
   </form>
   <app-breakfast class="row mt-4 d-flex bd-highlight" *ngIf="ListActive === 'breakfast'" [itemsBreakfast]="itemsBreakfast"
     (newItem)="addItemOrder($event)"></app-breakfast>
