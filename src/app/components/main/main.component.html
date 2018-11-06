@@ -1,19 +1,19 @@
 <main class="container mt-5 mb-4">
-  <div class="row mt-4">
-    <div class="col-sm-10 col-md-6 px-0 mt-5">
+  <div class="row mt-4 d-flex justify-content-center">
+    <div class="col-10 col-sm-10 col-md-6 px-0 mt-5">
       <app-orders class="mt-5" [order]="orderLocal" [priceTotal]="priceTotal" (delete)="deleteItem($event)" (send)="sendOrder($event)"
         (rest)="restItem($event)"></app-orders>
     </div>
   </div>
-  <form class="row mt-4 ">
-    <div class="col-md-3 p-0"><button type="button" class="btn btn-primary btn-lg mr-1 text-white btn-block" (click)="checkoutListBreakfast()"
+  <form class="row d-flex justify-content-center mt-4 ">
+    <div class="col-10 col-md-3 p-0 mb-1"><button type="button" class="btn btn-primary btn-lg mr-1 text-white btn-block" (click)="checkoutListBreakfast()"
         [ngClass]="{'btn-primary': ListActive === 'breakfast' ,  'bg-secondary': ListActive === 'lunch' }">
         Desayuno</button></div>
-    <div class="col-md-3 p-0">
+    <div class="col-10 col-md-3 p-0">
       <button type="button" class="btn bg-secondary btn-lg  text-white btn-block" (click)="checkoutListLunch()" [ngClass]="{'bg-secondary':ListActive === 'breakfast' ,  'btn-primary': ListActive === 'lunch' }">Almuerzo</button>
     </div>
   </form>
-  <app-breakfast class="row mt-4 d-flex bd-highlight" *ngIf="ListActive === 'breakfast'" [itemsBreakfast]="itemsBreakfast"
+  <app-breakfast class="row mt-4 d-flex justify-content-center bd-highlight" *ngIf="ListActive === 'breakfast'" [itemsBreakfast]="itemsBreakfast"
     (newItem)="addItemOrder($event)"></app-breakfast>
-  <app-lunch class="row mt-4 d-flex bd-highlight" *ngIf="ListActive === 'lunch'" [itemsLunch]="itemsLunch" (newItem)="addItemOrder($event)"></app-lunch>
+  <app-lunch class="row mt-4 d-flex justify-content-center bd-highlight" *ngIf="ListActive === 'lunch'" [itemsLunch]="itemsLunch" (newItem)="addItemOrder($event)"></app-lunch>
 </main>
