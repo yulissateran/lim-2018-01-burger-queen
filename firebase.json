@@ -1,14 +1,14 @@
 {
   "firestore": {
     "rules": "firestore.rules",
-    "indexes": "n"
+    "indexes": "firestore.indexes.json"
   },
   "functions": {
     "predeploy": [],
     "source": "functions"
   },
   "hosting": {
-    "public": "dist",
+    "public": "dist/burger-queen",
     "ignore": [
       "firebase.json",
       "**/.*",

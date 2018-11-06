@@ -14,10 +14,14 @@ export class ItemComponent implements OnInit {
 @Output() newItem:  EventEmitter<any> = new EventEmitter<void>();
 @Output() delete:  EventEmitter<any> = new EventEmitter<void>();
 @Output() rest:  EventEmitter<any> = new EventEmitter<void>();
+@Input()  itemClass : string;
 
-  constructor() { }
+  constructor() {
+    
+   }
 
   ngOnInit() {
+    console.log('itemclass', this.itemClass)
   }
   
   emmitItem(id){

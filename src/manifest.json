@@ -5,7 +5,7 @@
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
-  "start_url": "https://yulissateran.github.io/lim-2018-01-burger-queen/",
+  "start_url": "https://burguer-queen-e0998.firebaseapp.com/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",

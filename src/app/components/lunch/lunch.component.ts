@@ -6,6 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./lunch.component.css']
 })
 export class LunchComponent implements OnInit {
+@Input() keysListActive: string[];
 @Input()  itemsLunch: any;
 @Output() newItem:  EventEmitter<any> = new EventEmitter<void>();
 iconAdd = true;

@@ -1,0 +1,14 @@
+<!-- <ng-container class="itemId"> -->
+  <div class="modal fade bd-example-modal-lg"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="container">
+          <div class="row justify-content-center mt-4 d-md-flex bd-highlight">
+            <app-item class="card col-8 col-sm-4 col-lg-2 mx-sm-1 mb-4 py-3" *ngFor="let elem of types" [item]="elem" [iconAdd]="iconAdd"
+              (newItem)="emmitItem($event)"></app-item>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- </ng-container> -->

@@ -7,44 +7,26 @@
     <div class=" bd-highlight">
       <div class="d-flex flex-grow-1 bd-highlight">
         <div class=" bd-highlight">S/ {{item.price}}.00</div>
-        <div class=" bd-highlight mx-1">
-            <!-- <button type="button" class="btn btn-primary btn-block" (click)="emmitItem(item.id)">Ordenar</button> <i class="fas fa-plus-circle" *ngIf="iconAdd" (click)="emmitItem(item.id)"></i> -->
-            <button type="button" class="btn btn-primary btn-block h-100 " *ngIf="iconDelete" (click)="emmitDelete(indice)"> <i class="fas fa-trash-alt"  ></i></button>
-
-           
+        <div class=" bd-highlight mx-1" *ngIf="iconDelete">
+          <button type="button" class="btn btn-primary btn-block h-100 " (click)="emmitDelete(indice)"> <i class="fas fa-trash-alt"></i>
+          </button>
         </div>
-        <div class=" bd-highlight mx-1"  *ngIf="iconDelete">
-            <button type="button" class="btn btn-primary btn-block h-100 " (click)="emmitRestItem(item.id,indice )"> <i class="fas fa-minus-circle" ></i></button>
-           
+        <div class="bd-highlight mx-1" *ngIf="iconDelete">
+          <button type="button" class="btn btn-primary btn-block h-100 " (click)="emmitRestItem(item.id,indice )"> <i class="fas fa-minus-circle"></i></button>
         </div>
       </div>
     </div>
   </div>
 </div>
-<ng-container  *ngIf="iconAdd">
-    <img class="card-img-top" src="{{item.img}}" alt="Card image cap" height="120">
-    <div class="card-body">
-      <h6 class="card-subtitle">{{item.name}}</h6>
-      <p class="card-text">Precio: {{item.price}}.00</p>
-    </div>
-      <button type="button" class="btn btn-primary btn-block btn-lg" (click)="emmitItem(item.id)">Ordenar</button>
-  </ng-container> 
-
-<!-- <div class="d-md-flex bd-highlight" *ngIf="inEditing === false || currentTask !== task.id">
-  <div class="mr-auto  bd-highlight col-md-6">
-    <span [ngClass]="{'text-through': task.done}">{{task.description}}</span>
+<ng-container *ngIf="iconAdd">
+  <img class="card-img-top" src="{{item.img}}" alt="Card image cap" height="120">
+  <div class="card-body">
+    <h6 class="card-subtitle">{{item.name}}</h6>
+    <p class="card-text">Precio: {{item.price}}.00</p>
   </div>
-  <div class="bd-highlight m-1">
-    <div class="d-flex justify-content-around">
-      <button *ngIf="inEditing === false && currentTask !== task" type="button" class="btn  m-1 text-secondary bg-white" (click)="updateTask(task.id, task.description)"><i
-          class="fas fa-edit"></i></button>
-
-      <button *ngIf="inEditing === false && currentTask !== task.id" type="button" class="btn  m-1 text-secondary bg-white" (click)="deleteTask(task.id)"><i
-          class="fas fa-trash-alt"></i></button>
-      <button type="button" class="btn m-1 bg-white " (click)="markTaskDone(task.id)" *ngIf="inEditing === false && currentTask !== task.id"
-        [ngClass]="{'text-primary': task.done, 'text-secondary': !task.done}">
-        <i class="fas fa-check"></i>
-      </button>
-    </div>
-  </div>
-</div> -->
+  <!-- <button *ngIf="item.elements" type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg">Ordenar</button> -->
+  <!-- <ng-container *ngIf="item.elements">
+  </ng-container> -->
+  <!-- *ngIf="item.elements === undefined" -->
+  <button type="button" class="btn btn-primary btn-block btn-lg" (click)="emmitItem(item.id)" >Ordenar</button>
+</ng-container>
